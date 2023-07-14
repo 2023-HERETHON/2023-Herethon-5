@@ -403,5 +403,22 @@
       </div>
     </div>
     <script src="../js/detailGoal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+    <script>
+      $(function () {
+        $("#date").click(function () {
+          $("#date")
+            .datepicker({
+              onSelect: function (dateText) {
+                $("#date").text(dateText + " 까지");
+                $("#date").datepicker("hide");
+              },
+            })
+            .datepicker("show");
+        });
+      });
+    </script>
   </body>
 </html>
