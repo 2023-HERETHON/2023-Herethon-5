@@ -100,6 +100,17 @@
         top: -550px;
       }
 
+      #friendsgoal ::placeholder {
+        color: #fdfdfd;
+        text-align: center;
+        font-family: Noto Sans;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 31.475px; /* 314.754% */
+        letter-spacing: -0.492px;
+      }
+
       @media (min-width: 768px) {
         /* Styles for desktop */
         #example {
@@ -120,7 +131,7 @@
       />
       <img src="../images/설명 1.png" style="width: 280px" />
       <img src="../images/설명 2.png" style="width: 280px" />
-      <div id="example">예시 보러 가기</div>
+      <div id="example" onclick="gotoPlayer()">예시 보러 가기</div>
     </div>
     <img src="../images/Group 68.png" style="max-width: 360px" />
     <input
@@ -138,10 +149,13 @@
       src="../images/흠냐.png"
       style="width: 300px; position: relative; top: -350px"
     />
-    <input id="friendsgoal" />
-    <input id="friendsgoal" />
-    <input id="friendsgoal" />
-    <input id="friendsgoal" />
+    <input id="friendsgoal" placeholder="23년도 2학기 과탑 찍기" />
+    <input id="friendsgoal" placeholder="IT 계열 취뽀 👊" />
+    <input id="friendsgoal" placeholder="자격증 따기" />
+    <input id="friendsgoal" placeholder="멋사 활동 복습하기" />
+    <input id="friendsgoal" placeholder="좋은 식습관 만들기" />
+    <input id="friendsgoal" placeholder="옷 정리하기" />
+    <input id="friendsgoal" placeholder="수강신청 잘하기" />
     <script src="../js/mainGoal.js"></script>
   </body>
 </html>

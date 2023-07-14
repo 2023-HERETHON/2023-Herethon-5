@@ -5,3 +5,8 @@ function gotoMiddle() {
   localStorage.setItem("maingoal", inputValue);
   window.location.href = "./middleGoal.html";
 }
+
+//오타니의 계획표 예시 보러가기기
+function gotoPlayer() {
+  window.location.href = "./example.html";
+}

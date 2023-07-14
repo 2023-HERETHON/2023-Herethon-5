@@ -59,3 +59,8 @@ function gotoHere() {
   localStorage.setItem("maingoalContainer", inputElementmain);
   window.location.href = "./here.html";
 }
+
+//오타니의 계획표 예시 보러가기기
+function gotoPlayer() {
+  window.location.href = "./example.html";
+}
