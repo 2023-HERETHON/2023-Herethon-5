@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>comment</title>
+    <style>
+      body {
+        background-color: rgba(245, 245, 245, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .commentContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* margin-bottom: 10px; */
+        position: relative;
+        top: -900px;
+        left: 80px;
+        z-index: 2;
+      }
+
+      .comment {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .name {
+        color: #5c5c5c;
+        font-family: Noto Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 13px; /* 130% */
+        letter-spacing: -1px;
+        margin-bottom: 5px;
+      }
+
+      .comment-content {
+        color: #5c5c5c;
+        font-family: Noto Sans;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 13px; /* 162.5% */
+        letter-spacing: -1px;
+      }
+
+      hr {
+        position: relative;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../images/Rectangle 20.png" />
+    <img
+      src="../images/이미지화.png"
+      style="
+        width: 450px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: -130px;
+        left: 90px;
+      "
+    />
+    <div class="commentContainer"></div>
+    <input
+      id="cmt"
+      style="
+        border-radius: 4px;
+        background: #fff;
+        color: #000;
+        font-family: Noto Sans;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20.308px;
+        letter-spacing: -0.377px;
+        width: 350px;
+        height: 45px;
+        border: none;
+        position: relative;
+        top: -100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: 60px;
+      "
+      placeholder="댓글을 입력하세요."
+    />
+    <img
+      src="../images/_등록버튼.png"
+      style="
+        position: relative;
+        /* width: 100px; */
+        width: 60px;
+        height: 50px;
+        top: -150px;
+        left: 280px;
+      "
+      onclick="addComment()"
+    />
+    <script src="../js/comment.js"></script>
+  </body>
+</html>
