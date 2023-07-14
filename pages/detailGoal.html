@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>detialGoal</title>
+    <style>
+      body {
+        background-color: rgba(245, 245, 245, 1);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 800px;
+      }
+
+      #main-box {
+        width: 280px;
+        height: 450px;
+        flex-shrink: 0;
+        overflow-y: auto;
+        position: relative;
+        top: -480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      #date {
+        color: #999;
+        font-family: Noto Sans;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22.82px;
+        letter-spacing: -0.357px;
+        position: relative;
+        top: -498px;
+      }
+
+      #sub-box {
+        width: 247px;
+        height: 69px;
+        background-color: rgba(245, 245, 245, 1);
+        margin-bottom: 10px;
+        position: relative;
+        left: 17px;
+        top: 100px;
+      }
+
+      #num {
+        display: flex;
+        width: 30px;
+        height: 21px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #999;
+        text-align: center;
+        font-family: Noto Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 31.475px;
+        letter-spacing: -0.492px;
+        position: relative;
+        top: -20px;
+      }
+
+      #input {
+        display: flex;
+        width: 175px;
+        height: 23px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #5c5c5c;
+        font-family: Noto Sans;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 31.475px;
+        letter-spacing: -0.492px;
+        background-color: rgba(245, 245, 245, 1);
+        border: none;
+        top: -23px;
+        position: relative;
+      }
+
+      #memo {
+        display: flex;
+        width: 147px;
+        height: 10px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #999;
+        font-family: Noto Sans;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 31.475px;
+        letter-spacing: -0.492px;
+        background-color: rgba(245, 245, 245, 1);
+        border: none;
+        outline: none;
+        position: relative;
+        top: -18px;
+      }
+
+      #middlegoal {
+        position: relative;
+        top: 150px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #3b6e37;
+        text-align: center;
+        font-family: Noto Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="middlegoal" />
+    <img src="../images/이미지화 가능_배경.png" style="max-width: 360px" />
+    <div id="date">목표 마감 일자를 설정할 수 있습니다.</div>
+    <div id="main-box">
+      <div id="sub-box">
+        <img
+          id="count"
+          src="../images/달성 횟수.png"
+          style="width: 30px; left: 180px; top: -5px; position: relative"
+        />
+        <img
+          id="countup"
+          src="../images/Group 60.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="countdown"
+          src="../images/Group 61.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="savebtn"
+          src="../images/저장 버튼.png"
+          style="position: relative; width: 40px; left: 125px; top: 10px"
+        />
+        <div id="num">01</div>
+        <input type="text" id="input" placeholder="상세 목표를 입력해주세요." />
+        <input type="text" id="memo" placeholder="✏️ 메모를 입력하세요." />
+        <hr
+          style="
+            color: #999;
+            width: 200px;
+            top: -22px;
+            position: relative;
+            left: -20px;
+          "
+        />
+      </div>
+      <div id="sub-box">
+        <img
+          id="count"
+          src="../images/달성 횟수.png"
+          style="width: 30px; left: 180px; top: -5px; position: relative"
+        />
+        <img
+          id="countup"
+          src="../images/Group 60.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="countdown"
+          src="../images/Group 61.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="savebtn"
+          src="../images/저장 버튼.png"
+          style="position: relative; width: 40px; left: 125px; top: 10px"
+        />
+        <div id="num">02</div>
+        <input type="text" id="input" placeholder="상세 목표를 입력해주세요." />
+        <input type="text" id="memo" placeholder="✏️ 메모를 입력하세요." />
+        <hr
+          style="
+            color: #999;
+            width: 200px;
+            top: -22px;
+            position: relative;
+            left: -20px;
+          "
+        />
+      </div>
+      <div id="sub-box">
+        <img
+          id="count"
+          src="../images/달성 횟수.png"
+          style="width: 30px; left: 180px; top: -5px; position: relative"
+        />
+        <img
+          id="countup"
+          src="../images/Group 60.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="countdown"
+          src="../images/Group 61.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="savebtn"
+          src="../images/저장 버튼.png"
+          style="position: relative; width: 40px; left: 125px; top: 10px"
+        />
+        <div id="num">03</div>
+        <input type="text" id="input" placeholder="상세 목표를 입력해주세요." />
+        <input type="text" id="memo" placeholder="✏️ 메모를 입력하세요." />
+        <hr
+          style="
+            color: #999;
+            width: 200px;
+            top: -22px;
+            position: relative;
+            left: -20px;
+          "
+        />
+      </div>
+      <div id="sub-box">
+        <img
+          id="count"
+          src="../images/달성 횟수.png"
+          style="width: 30px; left: 180px; top: -5px; position: relative"
+        />
+        <img
+          id="countup"
+          src="../images/Group 60.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="countdown"
+          src="../images/Group 61.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="savebtn"
+          src="../images/저장 버튼.png"
+          style="position: relative; width: 40px; left: 125px; top: 10px"
+        />
+        <div id="num">04</div>
+        <input type="text" id="input" placeholder="상세 목표를 입력해주세요." />
+        <input type="text" id="memo" placeholder="✏️ 메모를 입력하세요." />
+        <hr
+          style="
+            color: #999;
+            width: 200px;
+            top: -22px;
+            position: relative;
+            left: -20px;
+          "
+        />
+      </div>
+      <div id="sub-box">
+        <img
+          id="count"
+          src="../images/달성 횟수.png"
+          style="width: 30px; left: 180px; top: -5px; position: relative"
+        />
+        <img
+          id="countup"
+          src="../images/Group 60.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="countdown"
+          src="../images/Group 61.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="savebtn"
+          src="../images/저장 버튼.png"
+          style="position: relative; width: 40px; left: 125px; top: 10px"
+        />
+        <div id="num">05</div>
+        <input type="text" id="input" placeholder="상세 목표를 입력해주세요." />
+        <input type="text" id="memo" placeholder="✏️ 메모를 입력하세요." />
+        <hr
+          style="
+            color: #999;
+            width: 200px;
+            top: -22px;
+            position: relative;
+            left: -20px;
+          "
+        />
+      </div>
+      <div id="sub-box">
+        <img
+          id="count"
+          src="../images/달성 횟수.png"
+          style="width: 30px; left: 180px; top: -5px; position: relative"
+        />
+        <img
+          id="countup"
+          src="../images/Group 60.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="countdown"
+          src="../images/Group 61.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="savebtn"
+          src="../images/저장 버튼.png"
+          style="position: relative; width: 40px; left: 125px; top: 10px"
+        />
+        <div id="num">06</div>
+        <input type="text" id="input" placeholder="상세 목표를 입력해주세요." />
+        <input type="text" id="memo" placeholder="✏️ 메모를 입력하세요." />
+        <hr
+          style="
+            color: #999;
+            width: 200px;
+            top: -22px;
+            position: relative;
+            left: -20px;
+          "
+        />
+      </div>
+      <div id="sub-box">
+        <img
+          id="count"
+          src="../images/달성 횟수.png"
+          style="width: 30px; left: 180px; top: -5px; position: relative"
+        />
+        <img
+          id="countup"
+          src="../images/Group 60.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="countdown"
+          src="../images/Group 61.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="savebtn"
+          src="../images/저장 버튼.png"
+          style="position: relative; width: 40px; left: 125px; top: 10px"
+        />
+        <div id="num">07</div>
+        <input type="text" id="input" placeholder="상세 목표를 입력해주세요." />
+        <input type="text" id="memo" placeholder="✏️ 메모를 입력하세요." />
+        <hr
+          style="
+            color: #999;
+            width: 200px;
+            top: -22px;
+            position: relative;
+            left: -20px;
+          "
+        />
+      </div>
+      <div id="sub-box">
+        <img
+          id="count"
+          src="../images/달성 횟수.png"
+          style="width: 30px; left: 180px; top: -5px; position: relative"
+        />
+        <img
+          id="countup"
+          src="../images/Group 60.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="countdown"
+          src="../images/Group 61.png"
+          style="position: relative; width: 10px; left: 178px; top: -4.5px"
+        />
+        <img
+          id="savebtn"
+          src="../images/저장 버튼.png"
+          style="position: relative; width: 40px; left: 125px; top: 10px"
+        />
+        <div id="num">08</div>
+        <input type="text" id="input" placeholder="상세 목표를 입력해주세요." />
+        <input type="text" id="memo" placeholder="✏️ 메모를 입력하세요." />
+        <hr
+          style="
+            color: #999;
+            width: 200px;
+            top: -22px;
+            position: relative;
+            left: -20px;
+          "
+        />
+      </div>
+    </div>
+    <script src="../js/detailGoal.js"></script>
+  </body>
+</html>
