@@ -10,6 +10,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-height: 800px;
       }
 
       input {
@@ -34,7 +35,7 @@
       #boxes678 {
         position: relative;
         display: inline-block;
-        top: 270px;
+        top: -520px;
         left: 6px;
       }
       #num {
@@ -65,14 +66,14 @@
       }
       #rewrite {
         position: relative;
-        top: 250px;
+        top: -530px;
         width: 80px;
         left: 110px;
       }
       #frame {
         width: 290px;
         position: relative;
-        top: 320px;
+        top: -470px;
         margin-bottom: 15px;
       }
 
@@ -84,29 +85,10 @@
         font-weight: 400;
         text-align: center;
       }
-      @media (min-width: 768px) {
-        /* Styles for desktop */
-        #boxes123,
-        #boxes45,
-        #boxes678 {
-          top: 230px;
-        }
-
-        #rewrite {
-          top: 220px;
-        }
-
-        #frame {
-          top: 280px;
-        }
-      }
     </style>
   </head>
   <body>
-    <img
-      src="../images/Group 101.png"
-      style="max-width: 360px; position: absolute; bottom: -13px"
-    />
+    <img src="../images/Group 101.png" style="max-width: 360px" />
     <img src="../images/rewrite.png" id="rewrite" />
     <div id="boxes123">
       <input type="text" id="box1" /><class id="num">01</class>
