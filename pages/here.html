@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>here</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      input {
+        width: 85.217px;
+        height: 86.195px;
+        flex-shrink: 0;
+        border: hidden;
+        border-radius: 5px;
+        background: #fff;
+
+        margin-bottom: 9px;
+        color: #000;
+        font-family: Noto Sans;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.308px; /* 203.077% */
+        letter-spacing: -0.377px;
+      }
+      #boxes123,
+      #boxes45,
+      #boxes678 {
+        position: relative;
+        display: inline-block;
+        top: 270px;
+        left: 6px;
+      }
+      #num {
+        color: #274a24;
+        text-align: center;
+        font-family: Noto Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 31.475px;
+        letter-spacing: -0.492px;
+        position: relative;
+        top: -30px;
+        left: -85px;
+      }
+      #num_main {
+        color: #fff;
+        text-align: center;
+        font-family: Noto Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 31.475px; /* 242.119% */
+        letter-spacing: -0.492px;
+        position: relative;
+        top: -30px;
+        left: -85px;
+      }
+      #rewrite {
+        position: relative;
+        top: 250px;
+        width: 80px;
+        left: 110px;
+      }
+      #frame {
+        width: 290px;
+        position: relative;
+        top: 320px;
+        margin-bottom: 15px;
+      }
+      @media (min-width: 768px) {
+        /* Styles for desktop */
+        #boxes123,
+        #boxes45,
+        #boxes678 {
+          top: 230px;
+        }
+
+        #rewrite {
+          top: 220px;
+        }
+
+        #frame {
+          top: 280px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="../images/Group 101.png"
+      style="max-width: 360px; position: absolute; bottom: -13px"
+    />
+    <img src="../images/rewrite.png" id="rewrite" />
+    <div id="boxes123">
+      <input type="text" id="box1" /><class id="num">01</class>
+      <input type="text" id="box2" /><class id="num">02</class>
+      <input type="text" id="box3" /><class id="num">03</class>
+    </div>
+    <div id="boxes45">
+      <input type="text" id="box4" /><class id="num">04</class>
+      <input
+        type="text"
+        id="mainbox"
+        style="
+          background: #274a24;
+          color: #fff;
+          text-align: center;
+          font-family: Noto Sans;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 17px; /* 130.769% */
+        "
+      /><class
+        id="num_main"
+        style="
+          color: #fff;
+          text-align: center;
+          font-family: Noto Sans;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 31.475px; /* 242.119% */
+          letter-spacing: -0.492px;
+          visibility: hidden;
+        "
+        >00</class
+      >
+      <input type="text" id="box5" /><class id="num">05</class>
+    </div>
+    <div id="boxes678">
+      <input type="text" id="box6" /><class id="num">06</class>
+      <input type="text" id="box7" /><class id="num">07</class>
+      <input type="text" id="box8" /><class id="num">08</class>
+    </div>
+    <img src="../images/Frame 14.png" id="frame" />
+    <img src="../images/Frame 12.png" id="frame" />
+    <img src="../images/Frame 13.png" id="frame" />
+    <script src="../js/here.js"></script>
+  </body>
+</html>
